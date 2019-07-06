@@ -1,7 +1,7 @@
 <template>
 	<div class="cart-item">
 		<div class="cart-item_img">
-			<img src="../../assets/item.png" alt="Item">
+			<img :src="'products/' + cart.pictureSrc" alt="Item">
 		</div>
 
 		<img src="../../assets/del.png" alt="del" class="del" @click="onDelete(cart)">
@@ -13,7 +13,7 @@
 			</div>
 			<div class="cart-item_about">
 				<div class="cart-item_input">
-					<span class="change-quant" @click="cart.quantity--">-</span>
+					<span class="change-quant" @click="cart.quantity--" v-if="cart.quantity > 0">-</span>
 					<input type="text" v-model="cart.quantity">
 					<span class="change-quant" @click="cart.quantity++">+</span>
 				</div>

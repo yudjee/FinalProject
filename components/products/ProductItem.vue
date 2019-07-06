@@ -1,18 +1,20 @@
 <template>
 	<div class="product-item">
 		<div class="product-item_img">
-			<img src="../../assets/item.png" alt="Item">
+			<img :src="pictureSrc" alt="Item" class="img_item">
 		</div>
 		<div class="product-item_title">
-			{{ title }}
+			<strong>{{ title }}</strong>
 		</div>
 		<div class="product-item_description">
 			{{ description }}
 		</div>
-		<span class="product-item_price"> Price: {{ price }}</span>
+		<span class="product-item_price"> <strong>Price: </strong> {{ price }}</span>
 		<form >
+			<span class="change-quant" @click="quantity--" v-if="quantity > 0">-</span>
 			<input type="text" class="product-item_input" placeholder="кол-во" v-model="quantity">
-			<button class="button" @click.prevent="onAddProduct(product, quantity)"> Купить </button>
+			<span class="change-quant" @click="quantity++">+</span>
+			<a class="button" @click.prevent="onAddProduct(product, quantity)"> Купить </a>
 		</form>
 
 
@@ -29,7 +31,8 @@
 				title: this.product.title,
 				description: this.product.description,
 				price: this.product.price,
-				quantity: ''
+				pictureSrc: this.product.pictureSrc,
+				quantity: 1
 			}
 		},
 		name: 'ProductItem',
@@ -53,10 +56,20 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: flex-end;
 		width: 300px;
 		border: 1px solid black;
+		border-radius: 10px;
 		padding: 10px;
 		margin: 20px;
 	};
+
+	.product-item_img {
+		align-self: center;
+	}
+
+	.product-item_title {
+		margin: 20px;
+	}
 
 </style>

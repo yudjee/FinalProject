@@ -2,54 +2,49 @@ export default {
 	products: [
 		{
 			id: 1,
-			title: 'Product_1',
+			title: 'Laptop Asus',
 			price: 1500,
 			description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, maiores',
+			pictureSrc: 'asus.jpg'
 		},
 		{
 			id: 2,
-			title: 'Product_2',
+			title: 'Sport item FitLogic',
 			price: 1300,
 			description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, maiores',
+			pictureSrc: 'fitlogic.jpg'
 		},
 		{
 			id: 3,
-			title: 'Product_3',
+			title: 'MakBook',
 			price: 1200,
 			description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, maiores',
+			pictureSrc: 'macbook.jpg'
 		},
 		{
 			id: 4,
-			title: 'Product_4',
+			title: 'Tefal',
 			price: 1000,
 			description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, maiores',
+			pictureSrc: 'tefal.jpg'
 		},
 		{
 			id: 5,
-			title: 'Product_5',
+			title: 'Washer',
 			price: 900,
 			description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, maiores',
+			pictureSrc: 'washer.jpg'
+		},
+		{
+			id: 6,
+			title: 'Zenit',
+			price: 900,
+			description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, maiores',
+			pictureSrc: 'zenit.jpg'
 		},
 	],
 
 	carts: [
-		{
-			id: 1,
-			title: 'Product_1',
-			price: 1500,
-			quantity: 1
-		},
-		{
-			id: 2,
-			title: 'Product_2',
-			price: 1300,
-			quantity: 2
-		},
-		{
-			id: 3,
-			title: 'Product_3',
-			price: 1200,
-			quantity: 3
-		},
+		
 	]
 }

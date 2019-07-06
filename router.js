@@ -13,16 +13,16 @@ export function createRouter() {
       {
         name: 'first',
         path: '/',
-        redirect: '/products'
+        redirect: '/products/'
       },
       {
         name: 'products',
-        path: '/products',
+        path: '/products/',
         component: ProductList
       },
       {
         name: 'cart',
-        path: '/cart',
+        path: '/cart/',
         component: CartList
       }
     ]

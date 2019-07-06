@@ -6,6 +6,7 @@ export default {
 			id: product.id,
 			title: product.title,
 			price: product.price,
+			pictureSrc: product.pictureSrc,
 			quantity
 		})
 	},
